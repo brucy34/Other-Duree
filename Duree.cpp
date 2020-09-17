@@ -25,14 +25,20 @@ Duree::Duree(int jours,int heures,int minutes,int secondes):m_jours(jours),m_heu
         m_minutes=minutes;
         m_secondes=secondes;
     }
-        bool estEgal(Duree const& b) const
-{
-    return(m_jours==b.m_jours&&m_heures==b.m_heures&&m_minutes==b.m_minutes&&m_secondes==b.m_secondes);
+bool Duree::operator==(Duree const& a)const
+    {
+        Duree const& b;
+    if (a.m_heures == b.m_heures && a.m_minutes == b.m_minutes && a.m_secondes == b.m_secondes)
+        return true;
+    else
+        return false;
 }
-
-bool operator==(Duree const& b)
+bool Duree::estEgal(Duree const& b) const
 {
+    return (m_heures == b.m_heures && m_minutes == b.m_minutes && m_secondes == b.m_secondes);     //Teste si a.m_heure == b.m_heure etc.
+}
+bool operator==(Duree const& a)
+{
+    Duree const& b;
     return a.estEgal(b);
-}
-
 }
