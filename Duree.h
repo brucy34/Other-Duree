@@ -7,7 +7,7 @@ class Duree
 
 public:
     Duree(int jours=0,int heures=0,int minutes=0,int secondes=0);
-    bool operator==(Duree const& a)const;
+    bool estEgal(Duree const& b) const;
 
 
 
@@ -21,6 +21,7 @@ private:
 
 
 };
+bool operator==(Duree const& a,Duree const& b);
 
 
 

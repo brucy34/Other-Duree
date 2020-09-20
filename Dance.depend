@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1600301883 source:c:\users\saintilma\desktop\dance\duree.cpp
+1600638156 source:c:\users\saintilma\desktop\dance\duree.cpp
 	"Duree.h"
 	<iostream>
 
-1600382422 c:\users\saintilma\desktop\dance\duree.h
+1600638088 c:\users\saintilma\desktop\dance\duree.h
 
 1600302441 source:c:\users\saintilma\desktop\dance\main.cpp
 	<iostream>
